@@ -7,18 +7,19 @@ analyse mass-spectrometry based metaproteomics and visualise the
 integrated information in the MGnify website. All the pipelines are
 wrapped in Snakemake.
 
-Current version: 0.10, October 01, 2022
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
--  ``Python version: > 3.8``
+The workflow is defined in snakemake and is available at `MetaPUF <https://github.com/PRIDE-reanalysis/MetaPUF.git/>`__
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   installation
+   workflow
+   inputs
+   outputs
+   example
+
 
 How to cite
 ~~~~~~~~~~~
