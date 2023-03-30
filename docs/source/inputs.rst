@@ -1,4 +1,4 @@
-**Inputs and Outputs of MetaPUF**
+**Inputs of MetaPUF**
 =================================
 
 This workflow offers the users to integrate publicly available
