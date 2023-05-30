@@ -60,14 +60,14 @@ and standalones.
 |                     |                          | library for running |
 |                     |                          | on Linux            |
 +---------------------+--------------------------+---------------------+
-| SearchGUI           | 4.0.41                   | Combine multiple    |
+| SearchGUI           | 3.3.20                   | Combine multiple    |
 |                     |                          | search engines to   |
 |                     |                          | perform peptide     |
 |                     |                          | identification from |
 |                     |                          | a protein sequence  |
 |                     |                          | database.           |
 +---------------------+--------------------------+---------------------+
-| PeptideShaker       | 2.0.33                   | Interpret           |
+| PeptideShaker       | 1.16.45                   | Interpret           |
 |                     |                          | proteomics          |
 |                     |                          | identification      |
 |                     |                          | results from        |
