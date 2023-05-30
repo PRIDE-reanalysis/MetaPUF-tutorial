@@ -80,47 +80,41 @@ and standalones.
 **Installation**
 ----------------
 
--  **Add bioconda channels**
-
-When you want to install a ny package, conda looks on the official
-Anaconda website (channel). However many channels are present, we will
-use bioconda channel. To use this type the command:
-
-::
-
-   conda config --add channels defaults
-   conda config --add channels bioconda
-
-It is important to have the channels in the right order. You can check
-the `order <https://bioconda.github.io/>`__ with the command
-
-::
-
-   conda config --get channels
-
 -  **Create a conda environment**
 
-Once miniconda is installed and the channels set, you can create a new
-environment for MetaPUF using the command
+We recommend to create a snakemake environment for the MetaPUF project,
+you can find more details about how to install from
+`here <https://snakemake.readthedocs.io/en/stable/getting_started/installation.html>`__,
+after installation, please active the snakemake environment or you can
+rename it.
 
 ::
 
-   conda env --name metapuf create --f metapuf_env.yml
-
-You must active the metapuf environment whenever you work with this
-workflow.
-
-::
-
-   conda activate metapuf
+   conda activate snakemake
 
 -  **From Github source code**
 
-You can install metapuf locally from Github
+You will need to install metapuf locally from Github
 
 ::
 
    git clone https://github.com/PRIDE-reanalysis/MetaPUF.git
+
+-  **Options**
+
+1. Please install (if you are using Linux/Mac OS)
+   `Mono <https://www.mono-project.com/download/stable/#download-lin>`__
+   for converting proteomics raw files. (install mono-complete if you
+   encounter “assembly not found” errors).
+
+2. Please add your project path to ``PYTHONPATH`` in your ``.bashrc``
+   file:
+   (i.e. ``export PYTHONPATH="/Users/your path/MetaPUF:$PYTHONPATH"``)
+
+3. Please download the Proteomics tools (ThermoRawFileParser, SearchGUI,
+   PeptideShaker, please find details in ``README`` in the project
+   github page) and locate them in the correct folder
+   (``MetaPUF/workflow/bin/``)
 
 **Usage**
 ---------
@@ -136,9 +130,9 @@ Start running your own analysis with one line of code:
    This is an example of running the workflow with Snakemake, we used 4
    cores, you should change it based on your own machine.
 
-ALso, you can test your pipeline before a real run, use a Snakemake dry
-run command:
+Also, it is recommended to test your pipeline before a real run, use a
+snakemake dry run command:
 
 ::
 
-   snakemake -n --cores 4
+   snakemake -np
